@@ -19,8 +19,8 @@
 
         <div class="nav-right">
             <ul class="nav-links">
-                <li><a href="views/registro.php">Registro</a></li>
-                <li><a href="views/login.php">Login</a></li>
+                <li><a href="../views/registro.php">Registro</a></li>
+                <li><a href="../views/login.php">Login</a></li>
             </ul>
         </div>
     </nav>
