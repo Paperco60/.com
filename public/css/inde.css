@@ -1,0 +1,118 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    font-family: 'Itim', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Color de fondo claro */
+}
+
+.nav, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cc5a00;
+    padding: 15px 20px; /* Padding más alto */
+    height: 70px; /* Altura consistente */
+    box-sizing: border-box;
+    
+}
+
+/* Centra el texto dentro del footer */
+footer {
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Logo y nombre de la empresa */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.company-name {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Links de navegación */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.hero-image {
+    max-width: 800px; /* Aumenta el tamaño máximo */
+    width: 95%; /* Ocupa el 95% del contenedor */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+/* Sección de botón de compra */
+.buy-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: -20px 0 20px;
+}
+
+.buy-section h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.buy-section p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  #cc5a00;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color:  #ea9c60;
+}

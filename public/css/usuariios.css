@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    font-family: 'Itim', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #cc5a00;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.company-name {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.form-container {
+    flex: 1; /* Toma el espacio disponible */
+    margin-right: 20px; /* Espacio entre la tabla y la imagen */
+}
+
+.image-container {
+    flex: 1; /* Toma el espacio restante */
+    display: flex;
+    justify-content: center; /* Centra la imagen */
+    align-items: center; /* Centra verticalmente */
+}
+
+h1, h2, h3 {
+    margin: 0 0 10px;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para inputs y botones */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Hace que los inputs ocupen el 100% del contenedor */
+    padding: 10px; /* Relleno interno */
+    margin: 5px 0; /* Espaciado vertical */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 4px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho total */
+}
+
+button {
+    background-color: #cc5a00; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 15px; /* Relleno interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    font-weight: bold; /* Texto en negrita */
+}
+
+button:hover {
+    background-color: #b94d00; /* Color de fondo al pasar el mouse */
+}
+.mensaje {
+    color: red;
+    background-color: #ffe6e6;
+    border: 1px solid red;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center; /* Centra el texto */
+    align-items: center; /* Centra verticalmente */
+    background-color: #cc5a00; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 15px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de la fuente */
+    position: relative; /* Asegúrate de que esté en la parte inferior */
+    bottom: 0; /* Coloca el footer en la parte inferior */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+}

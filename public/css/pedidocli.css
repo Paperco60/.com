@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body {
+    font-family: 'Itim', cursive; /* Fuente Itim */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cc5a00; /* Naranja menos brillante */
+    padding: 10px 20px; /* Espaciado */
+}
+
+/* Contenedor del logo y nombre de la empresa */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo del logotipo */
+.logo {
+    width: 70px; /* Tamaño del logotipo */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 15px; /* Espacio entre el logo y el nombre de la empresa */
+}
+
+/* Estilo del nombre de la empresa */
+.company-name {
+    color: white; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+}
+
+/* Estilos de los enlaces de navegación */
+.nav-right {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none; /* Quita los puntos de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Para mostrar los enlaces en una sola línea */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Espaciado entre los enlaces */
+}
+
+.nav-links a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado */
+    font-weight: 600; /* Fuente más gruesa */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Subraya el texto al pasar el mouse */
+}
+
+/* Contenedor principal */
+.container {
+    padding: 20px; /* Espaciado en el contenido principal */
+}
+
+h1 {
+    margin: 0 0 20px; /* Margen inferior del título */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #cc5a00;
+    color: white;
+}
+
+td img {
+    width: 50px; /* Ajusta el tamaño de la imagen según lo necesites */
+    height: auto;
+}
+
+/* Estilos del botón Mostrar Factura */
+.btn-factura {
+    background-color: #cc5a00; /* Color del botón */
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-factura:hover {
+    background-color: #b84e00; /* Color al pasar el mouse */
+}
+
+

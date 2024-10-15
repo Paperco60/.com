@@ -1,0 +1,70 @@
+/* Estilo para el contenedor */
+.container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo para la factura */
+.factura {
+    background-color: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para el encabezado */
+.header {
+    text-align: center;
+}
+
+/* Estilo para el logotipo */
+.logo {
+    max-width: 100px; /* Ancho máximo del logo */
+}
+
+/* Estilo para la empresa */
+.empresa {
+    font-size: 24px;
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para la tabla */
+.table {
+    border-collapse: collapse; /* Para eliminar el espacio entre los bordes de las celdas */
+    width: 100%; /* Ancho completo de la tabla */
+}
+
+.table th, .table td {
+    border: none; /* Sin borde */
+    padding: 8px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+.table th {
+    background-color: #f3f4f6; /* Fondo gris claro para el encabezado */
+    color: #333; /* Color del texto en el encabezado */
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo claro para filas pares */
+}
+
+/* Estilo para el botón */
+.btn {
+    display: inline-block; /* Para que se muestre como un botón */
+    margin-top: 20px; /* Margen superior */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #cc5a00; /* Color de fondo naranja */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 5px; /* Bordes redondeados */
+    font-weight: bold; /* Texto en negrita */
+    transition: background-color 0.3s; /* Transición suave para el hover */
+}
+
+.btn:hover {
+    background-color: #b75100; /* Color de fondo más oscuro al pasar el mouse */
+}
+
+

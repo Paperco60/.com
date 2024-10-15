@@ -1,0 +1,268 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap'); 
+
+body {
+    font-family: 'Itim', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de la barra de navegación */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cc5a00;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.company-name {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-right {
+    display: flex;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 20px;
+    transition: color 0.3s; /* Suaviza la transición del color */
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+    color: #ffcc66; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para la tabla de productos */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto-card {
+    background: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.producto-imagen {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto-titulo {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.producto-codigo,
+.producto-precio {
+    font-size: 14px;
+    color: #777;
+}
+
+.botones-container {
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: #cc5a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #b75100;
+}
+
+/* Estilos para la ventana emergente del carrito */
+.ventana-emergente {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    z-index: 999;
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+}
+
+.contenido-ventana {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    width: 400px;
+    position: relative; /* Permite posicionar elementos hijos */
+}
+
+/* Estilo del botón de cerrar */
+.btn-cerrar {
+    background-color: transparent; /* Fondo transparente */
+    color: #333; /* Color del texto */
+    font-size: 24px; /* Tamaño de la fuente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    position: absolute; /* Posiciona el botón en la esquina superior */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    right: 10px; /* Ajusta la distancia desde la derecha */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+}
+
+.btn-cerrar:hover {
+    color: #ffcc66; /* Cambia el color al pasar el ratón (ejemplo: amarillo) */
+}
+
+/* Estilo del carrito con productos alineados */
+#productos-en-carrito {
+    display: flex;
+    flex-direction: column;
+}
+
+.producto-en-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 10px;
+}
+
+/* Estilo para la imagen en el carrito */
+.producto-en-carrito img {
+    width: 50px; /* Ajusta este valor al tamaño deseado para la imagen del carrito */
+    height: auto; 
+    margin-right: 15px;
+}
+
+.producto-detalles {
+    flex-grow: 1;
+}
+
+.producto-detalles h4 {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.producto-detalles p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.producto-precio-total {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Botones en la ventana emergente */
+#btn-confirmar,
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #cc5a00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#btn-confirmar:hover,
+button:hover {
+    background-color: #b75100;
+}
+
+.producto-carrito {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px; /* Espaciado entre productos */
+    padding: 10px;
+    border: 1px solid #ccc; /* Línea divisoria */
+}
+
+.producto-imagen-carrito {
+    width: 100px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen no se deforme */
+    margin-right: 10px; /* Espaciado entre la imagen y el texto */
+}
+
+.producto-detalle {
+    flex-grow: 1; /* Permite que el detalle ocupe el espacio restante */
+}
+
+.producto-total {
+    margin-left: 10px; /* Espaciado entre el detalle y el total */
+}
+
+.eliminar-btn {
+    background-color: red; /* Color de fondo para el botón de eliminar */
+    color: white; /* Color del texto del botón */
+    border: none;
+    padding: 5px 10px; /* Espaciado del botón */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+.eliminar-btn:hover {
+    background-color: darkred; /* Cambia el color al pasar el cursor */
+} 
+
